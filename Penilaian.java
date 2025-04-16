@@ -3,8 +3,7 @@ public class Penilaian {
     double nilaiUTS;
     double nilaiUAS;
     double nilaiAkhir;
-    
-    
+
     public Penilaian () {
 
     }
