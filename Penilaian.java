@@ -17,4 +17,8 @@ public class Penilaian {
     public void hitungNilaiAkhir() {
         nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
     }
+
+    void tampilkanDataPenilaian () {
+        System.out.println("");
+    }
 }
