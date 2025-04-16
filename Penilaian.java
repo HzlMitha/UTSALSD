@@ -22,4 +22,5 @@ public class Penilaian {
     void tampilkanDataPenilaian () {
         System.out.printf("%-15s | %-20s | %-10s%n", mahasiswa.nama, mataKuliah.namaMK, "Nilai Akhir: " + nilaiAkhir);
     }
+
 }

@@ -1,8 +1,7 @@
 public class Mahasiswa {
     String nim;
     String nama;
-    String prodi;
-    int listMhs = 3; 
+    String prodi; 
     
     public Mahasiswa () {
     

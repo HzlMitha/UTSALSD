@@ -41,8 +41,8 @@ public class SistemPengelolaan {
                 case 1:
                     System.out.println();
                     System.out.println("Daftar Mahasiswa:");
-                    for (int i = 0; i < listMhs.length; i++) {
-                        listMhs[i].tampilMahasiswa();
+                    for (Mahasiswa Mhs : listMhs) {
+                        Mhs.tampilMahasiswa();
                     }
                     System.out.println();
                     break;
@@ -66,6 +66,23 @@ public class SistemPengelolaan {
                     break;
 
                 case 4:
+                    for (int i = 0; i <= ObjPenilaian.length - 1; i++) {
+                        int minIndex = i;
+                        for (int j = i + 1; j < ObjPenilaian.length; j++) {
+                            if (ObjPenilaian[j].nilaiAkhir > ObjPenilaian[minIndex].nilaiAkhir) {
+                                minIndex = j;
+                            }
+                        }
+                        Penilaian temp = ObjPenilaian[minIndex];
+                        ObjPenilaian[minIndex] = ObjPenilaian[i];
+                        ObjPenilaian[i] = temp;
+                    }
+                    System.out.println();
+                    System.out.println("Data Penilaian Berdasarkan Nilai Akhir: ");
+                    for (Penilaian nilai : ObjPenilaian) {
+                        System.out.printf("%-15s | %-20s | %-10s%n", nilai.mahasiswa.nama, nilai.mataKuliah.namaMK, "Nilai Akhir: " + nilai.nilaiAkhir);
+                    }
+                    System.out.println();
                     break;
 
                 case 5:
