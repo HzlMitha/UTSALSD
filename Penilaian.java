@@ -4,6 +4,7 @@ public class Penilaian {
     double nilaiUAS;
     double nilaiAkhir;
     
+    
     public Penilaian () {
 
     }
