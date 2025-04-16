@@ -6,16 +6,13 @@ public class Penilaian {
     double nilaiUAS;
     double nilaiAkhir;
 
-    public Penilaian () {
-        
-    }
-
     public Penilaian (Mahasiswa mhs, MataKuliah mk, double tugas, double uts, double uas) {
         mahasiswa = mhs;
         mataKuliah = mk;
         nilaiTugas = tugas;
         nilaiUTS = uts;
         nilaiUAS = uas;
+        hitungNilaiAkhir();
     }
 
     public void hitungNilaiAkhir() {
@@ -23,6 +20,6 @@ public class Penilaian {
     }
 
     void tampilkanDataPenilaian () {
-        System.out.println(mahasiswa.nama + " | " + mataKuliah.namaMK + " | " + "Nilai Akhir: " + nilaiAkhir);
+        System.out.printf("%-15s | %-20s | %-10s%n", mahasiswa.nama, mataKuliah.namaMK, "Nilai Akhir: " + nilaiAkhir);
     }
 }

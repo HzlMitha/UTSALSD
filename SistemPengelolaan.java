@@ -18,9 +18,9 @@ public class SistemPengelolaan {
 
         Penilaian[] ObjPenilaian = {
             new Penilaian(listMhs[0], listMk[0], 80, 85, 90),
-            new Penilaian(listMhs[1], listMk[1], 60, 75, 70),
-            new Penilaian(listMhs[0], listMk[0], 75, 70, 80),
-            new Penilaian(listMhs[1], listMk[1], 85, 90, 95),
+            new Penilaian(listMhs[0], listMk[1], 60, 75, 70),
+            new Penilaian(listMhs[1], listMk[0], 75, 70, 80),
+            new Penilaian(listMhs[2], listMk[1], 85, 90, 95),
             new Penilaian(listMhs[2], listMk[2], 80, 90, 65)
         };
 
@@ -33,18 +33,36 @@ public class SistemPengelolaan {
             System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir");
             System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
             System.out.println("0. Keluar");
-            System.out.println("Pilih menu : ");
+            System.out.print("Pilih menu : ");
             pilihan = sc06.nextInt();
             sc06.nextLine();
 
             switch (pilihan) {
                 case 1:
+                    System.out.println();
+                    System.out.println("Daftar Mahasiswa:");
+                    for (int i = 0; i < listMhs.length; i++) {
+                        listMhs[i].tampilMahasiswa();
+                    }
+                    System.out.println();
                     break;
 
                 case 2:
+                    System.out.println();
+                    System.out.println("Daftar Mata Kuliah:");
+                    for (int i = 0; i < listMk.length; i++) {
+                        listMk[i].tampilMataKuliah();
+                    }
+                    System.out.println();
                     break;
 
                 case 3:
+                    System.out.println();
+                    System.out.println("Data Penilaian:");
+                    for (int i = 0; i < ObjPenilaian.length; i++) {
+                        ObjPenilaian[i].tampilkanDataPenilaian();
+                    }
+                    System.out.println();
                     break;
 
                 case 4:
@@ -54,6 +72,7 @@ public class SistemPengelolaan {
                     break;
 
                 case 0:
+                System.out.println("Terima kasih telah menggunakan Sistem Pengelolaan Nilai Mahasiswa");
                     break;
 
                 default:

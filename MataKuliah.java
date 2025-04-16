@@ -14,9 +14,6 @@ public class MataKuliah {
     }
 
     void tampilMataKuliah () {
-        System.out.println("Daftar Mata Kuliah:");
-        for (int i = 0; i < 5; i++) {
-            
-        }
+        System.out.printf("%-15s | %-20s | %-10s%n", "KodeMK: " + kodeMk, "Nama: " + namaMK, "SKS: " + sks);           
     }
 }
