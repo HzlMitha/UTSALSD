@@ -8,5 +8,6 @@ public class TES {
         System.out.println("Hello, world!"); // This is a comment
         System.out.println("Hello, world!"); // This is a comment
         System.out.println("hallo");
+        System.out.println(1234);
     }
 }
