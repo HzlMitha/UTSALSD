@@ -15,6 +15,7 @@ public class Mahasiswa {
     
     void tampilMahasiswa() {
         for (int i = 0; i < 5; i++) {
+            System.out.println("-------------------------------------");
             System.out.println("NIM/t : " + nim);
             System.out.println("Nama/t : " + nama);
             System.out.println("Prodi/t : " + prodi);
