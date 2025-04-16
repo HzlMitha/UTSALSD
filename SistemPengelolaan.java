@@ -16,13 +16,14 @@ public class SistemPengelolaan {
             new MataKuliah ( "MK003", "Desain web", 3)
         };
 
-        Penilaian ObjPenilaian = {
-            new Penilaian(),
-            new Penilaian(),
-            new Penilaian(),
-            new Penilaian(),
-            new Penilaian()
+        Penilaian[] ObjPenilaian = {
+            new Penilaian(listMhs[0], listMk[0], 80, 85, 90),
+            new Penilaian(listMhs[1], listMk[1], 60, 75, 70),
+            new Penilaian(listMhs[0], listMk[0], 75, 70, 80),
+            new Penilaian(listMhs[1], listMk[1], 85, 90, 95),
+            new Penilaian(listMhs[2], listMk[2], 80, 90, 65)
         };
+
         int pilihan;
         do {
             System.out.println("=== MENU SISTEM AKADEMIK ===");
