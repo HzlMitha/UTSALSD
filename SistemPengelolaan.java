@@ -130,6 +130,8 @@ public class SistemPengelolaan {
                     break;
             }
         } while (pilihan != 0);
+
+        sc06.close();
         
     }
 }
