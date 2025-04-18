@@ -66,30 +66,14 @@ public class Sistem {
         System.out.println();
     }
 
-    public void urutkanMahasiswaBerdasarkanNIM() {
-        for (int i = 0; i < listMhs.length - 1; i++) {
-            for (int j = 0; j < listMhs.length - i - 1; j++) {
-                if (listMhs[j].nim.compareTo(listMhs[j + 1].nim) > 0) {
-                    Mahasiswa temp = listMhs[j];
-                    listMhs[j] = listMhs[j + 1];
-                    listMhs[j + 1] = temp;
-                }
-            }
-        }
-    }
-
     public void cariMahasiswaBerdasarkanNIM(String nimDicari) {
         System.out.println();
-        int left = 0, right = listMhs.length - 1, foundIndex = -1;
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (listMhs[mid].nim.equals(nimDicari)) {
-                foundIndex = mid;
+        int foundIndex = -1;
+
+        for (int i = 0; i < listMhs.length; i++) {
+            if (listMhs[i].nim.equals(nimDicari)) {
+                foundIndex = i;
                 break;
-            } else if (listMhs[mid].nim.compareTo(nimDicari) < 0) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
             }
         }
 

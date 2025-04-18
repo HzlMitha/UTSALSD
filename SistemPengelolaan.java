@@ -36,7 +36,6 @@ public class SistemPengelolaan {
                     break;
 
                 case 5:
-                    sistem.urutkanMahasiswaBerdasarkanNIM();
                     System.out.print("Masukkan NIM mahasiswa yang dicari: ");
                     String nimDicari = sc06.nextLine();
                     sistem.cariMahasiswaBerdasarkanNIM(nimDicari);
