@@ -23,7 +23,7 @@ public class Sistem {
         System.out.println();
         System.out.println("Daftar Mahasiswa:");
         for (Mahasiswa mhs : listMhs) {
-            System.out.println("NIM: " + mhs.nim + " | Nama: " + mhs.nama + " | Prodi: " + mhs.prodi);
+            mhs.tampilMahasiswa();
         }
         System.out.println();
     }
@@ -32,7 +32,7 @@ public class Sistem {
         System.out.println();
         System.out.println("Daftar Mata Kuliah:");
         for (MataKuliah mk : listMk) {
-            System.out.println("Kode MK: " + mk.kodeMK + " | Nama MK: " + mk.namaMK + " | SKS: " + mk.sks);
+            mk.tampilMataKuliah();
         }
         System.out.println();
     }
